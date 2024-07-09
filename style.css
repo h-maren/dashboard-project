@@ -8,6 +8,8 @@
     background-color: #2e1065;
     color: #fdf4ff;
     grid-row: 1/-1;
+    display: grid;
+    font-size: 20px;
 }
 
 .header {
@@ -18,4 +20,69 @@
 
 .main-content {
     background-color: grey;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+    padding-left:30px;
+    margin: 10px 0px;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    display: inline;
+    margin: 0px;
+}
+
+.dash-header{
+    display: flex;
+    align-items: center;
+}
+
+
+#home {
+    background-image: url(icons/home.svg);
+    background-repeat: no-repeat;
+}
+#profile {
+    background-image: url(icons/card-account.svg);
+    background-repeat: no-repeat;
+}
+#messages{
+    background-image: url(icons/message.svg);
+    background-repeat: no-repeat;
+}
+#history {
+    background-image: url(icons/clock-time-four.svg);
+    background-repeat: no-repeat;
+}
+#tasks {
+    background-image: url(icons/checkbox.svg);
+    background-repeat: no-repeat;
+}
+#communities {
+    background-repeat: no-repeat;
+    background-image: url(icons/account-group.svg);
+}
+#settings {
+    background-repeat: no-repeat;
+    background-image: url(icons/cog.svg);
+}
+#support {
+    background-repeat: no-repeat;
+    background-image: url(icons/help.svg);
+}
+#privacy {
+    background-repeat: no-repeat;
+    background-image: url(icons/security.svg);
 }
