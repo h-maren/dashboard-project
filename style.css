@@ -16,10 +16,35 @@
     background-color: #fdf4ff;
     color: #2e1065;
     grid-column: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .main-content {
     background-color: grey;
+}
+
+.searchbar-row, .user-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchtext {
+    width: 400px;
+}
+
+.right-top-header, .search, .left-user-info, .right-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 10px;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -39,9 +64,17 @@ a {
     color: white;
 }
 
-h1 {
+p,h1,h2,h3,h4 {
     display: inline;
     margin: 0px;
+}
+
+.batman-logo {
+    height: 30px;
+}
+
+.batman-user-logo {
+    height: 40px;
 }
 
 .dash-header{
@@ -55,8 +88,8 @@ h1 {
     background-repeat: no-repeat;
 }
 #profile {
-    background-image: url(icons/card-account.svg);
-    background-repeat: no-repeat;
+   background-image: url(icons/card-account.svg);
+   background-repeat: no-repeat;
 }
 #messages{
     background-image: url(icons/message.svg);
