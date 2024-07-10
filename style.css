@@ -58,8 +58,10 @@
     grid-row: 1/-1;
 }
 
-.announcements{
+.announce-card{
     background-color: yellow;
+    border-style: dotted;
+    border-color: brown;
 }
 
 .trending {
@@ -106,16 +108,26 @@ p,h1,h2,h3,h4 {
     margin: 0px;
 }
 
-.project-card, .project-card-text {
+.project-card, .project-card-text, .announcements, .announce-card, .trend-user, .trending {
     display: flex;
+    flex-direction: column;
 }
 
-.project-card-text, .project-card {
-    flex-direction: column;
+.trending {
+    gap: 10px;
+}
+
+.trend-info {
+    display: flex;
+    align-items: center;
 }
 
 .project-card {
     justify-content: space-between;
+}
+
+.announce-card {
+    flex: 1;
 }
 
 .icon-line {
