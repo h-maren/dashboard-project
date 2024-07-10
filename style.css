@@ -5,17 +5,21 @@
 }
 
 .sidebar {
-    background-color: #2e1065;
-    color: #fdf4ff;
+    background-color: black;
+    color: #ffff36;
     grid-row: 1/-1;
     display: grid;
     font-size: 20px;
     height: 100vh;
 }
 
+.navigation {
+    color:#0fc3ff;
+}
+
 .header {
-    background-color: #fdf4ff;
-    color: #2e1065;
+    background-color: #0fc3ff;
+    color: black;
     grid-column: 2/-1;
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@
 }
 
 .main-content {
-    background-color: grey;
+    background-color: #c7c7c7;
 }
 
 .searchbar-row, .user-info-row {
@@ -59,13 +63,11 @@
 }
 
 .announce-card{
-    background-color: yellow;
-    border-style: dotted;
-    border-color: brown;
+    margin: 20px;
 }
 
 .trending {
-    background-color: white;
+
 }
 .project-card-container{
     display: grid;
@@ -78,11 +80,8 @@
 }
 
 .project-card {
-    background-color:red;
     padding: 15px;
-    border-color: blue;
-    border-width: 5px;
-    border-style: dotted;
+    background-color: #ffff36;
     height: 150px;
 }
 
@@ -100,7 +99,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffff36;
 }
 
 p,h1,h2,h3,h4 {
@@ -108,7 +107,7 @@ p,h1,h2,h3,h4 {
     margin: 0px;
 }
 
-.project-card, .project-card-text, .announcements, .announce-card, .trend-user, .trending {
+.project-card, .project-card-text, .announcements, .announce-card, .trend-user, .trending, .announce-container, .trend-container {
     display: flex;
     flex-direction: column;
 }
@@ -121,9 +120,19 @@ p,h1,h2,h3,h4 {
     display: flex;
     align-items: center;
 }
+.trend-container, .announce-container {
+    background-color:#ffff36;
+    margin-right: 20px;
+    border-radius: 5%;
+}
+
+.announce-container {
+    flex:1;
+}
 
 .project-card {
     justify-content: space-between;
+    border-radius: 5%;
 }
 
 .announce-card {
