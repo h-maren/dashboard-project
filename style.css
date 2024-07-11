@@ -1,3 +1,21 @@
+
+@font-face {
+    font-family: 'sf_cartoonist_handregular';
+    src: url('fonts/sf_cartoonist_hand-webfont.woff2') format('woff2'),
+         url('fonts/sf_cartoonist_hand-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'true_crimesregular';
+    src: url('fonts/true-crimes-webfont.woff2') format('woff2'),
+         url('fonts/true-crimes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -105,6 +123,19 @@ a {
 p,h1,h2,h3,h4 {
     display: inline;
     margin: 0px;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'true_crimesregular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'sf_cartoonist_handregular', Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color:#c7c7c7;
+    border: none;
 }
 
 .project-card, .project-card-text, .announcements, .announce-card, .trend-user, .trending, .announce-container, .trend-container {
