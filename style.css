@@ -16,10 +16,14 @@
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
@@ -42,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10px 40px;
 }
 
 .main-content {
@@ -54,8 +59,11 @@
     align-items: center;
 }
 
-.searchtext {
+input.searchtext {
     width: 400px;
+    height: 25px;
+    border-radius: 20px;
+    border-style: none;
 }
 
 .right-top-header, .search, .left-user-info, .right-user-info {
@@ -72,21 +80,20 @@
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .projects {
     grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
 }
 
 .announce-card{
     margin: 20px;
 }
 
-.trending {
-
-}
 .project-card-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -94,13 +101,18 @@
     overflow: auto;
     resize: both;
     gap: 15px;
-    margin: 15px;
+    margin: 0px 10px;
 }
 
 .project-card {
     padding: 15px;
     background-color: #ffff36;
     height: 150px;
+    box-shadow: -5px 0px #0fc3ff;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 ul {
@@ -129,6 +141,18 @@ h1,h2,h3,h4 {
     font-family: 'true_crimesregular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+.main-content h2 {
+    padding: 10px;
+}
+
+.right-top-header h3 {
+    font-size: 24px;
+}
+
 p {
     font-family: 'sf_cartoonist_handregular', Arial, Helvetica, sans-serif;
 }
@@ -136,6 +160,15 @@ p {
 button {
     background-color:#c7c7c7;
     border: none;
+    border-radius: 10px;
+}
+
+.right-user-info > button {
+    font-family: 'sf_cartoonist_handregular', Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 100px;
+    font-size: 24px;
+    border-radius: 14px;
 }
 
 .project-card, .project-card-text, .announcements, .announce-card, .trend-user, .trending, .announce-container, .trend-container {
@@ -150,6 +183,7 @@ button {
 .trend-info {
     display: flex;
     align-items: center;
+    margin: 5px 15px;
 }
 .trend-container, .announce-container {
     background-color:#ffff36;
@@ -159,11 +193,6 @@ button {
 
 .announce-container {
     flex:1;
-}
-
-.project-card {
-    justify-content: space-between;
-    border-radius: 5%;
 }
 
 .announce-card {
@@ -183,14 +212,22 @@ button {
 }
 
 .batman-user-logo {
-    height: 40px;
+    height: 60px;
 }
 
 .dash-header{
     display: flex;
     align-items: center;
+    padding: 0px 20px;
 }
 
+hr {
+    margin: 0px 10px;
+    padding: 0px;
+    width: 80%;
+    color:#0fc3ff;
+    align-self: center;
+}
 
 #home {
     background-image: url(icons/home.svg);
