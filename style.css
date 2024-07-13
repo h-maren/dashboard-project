@@ -35,8 +35,9 @@
     height: 100vh;
 }
 
-.navigation {
+.navigation, .settings {
     color:#0fc3ff;
+    font-family: 'true_crimesregular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header {
@@ -90,8 +91,12 @@ input.searchtext {
     flex-direction: column;
 }
 
-.announce-card{
-    margin: 20px;
+.announce-card {
+    margin: 5px 20px;
+}
+
+.announce-card h3 {
+    padding: 5px 0px;
 }
 
 .project-card-container{
@@ -115,6 +120,7 @@ input.searchtext {
     border-radius: 10px;
 }
 
+
 ul {
     display: flex;
     flex-direction: column;
@@ -135,6 +141,10 @@ a {
 p,h1,h2,h3,h4 {
     display: inline;
     margin: 0px;
+}
+
+.project-card p {
+    font-size: 20px;
 }
 
 h1,h2,h3,h4 {
@@ -191,6 +201,9 @@ button {
     border-radius: 5%;
 }
 
+.trend-user {
+    margin-left: 10px;
+}
 .announce-container {
     flex:1;
 }
